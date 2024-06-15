@@ -1,9 +1,9 @@
-def get_mask_card_number(number: int | str) -> str:
+def get_mask_card_number(number: str) -> str:
     """Функция маскировки номера карты"""
     return number[:4] + " " + number[4:6] + "** **** " + number[-4:]
 
 
-def get_mask_account(number: int | str) -> str:
+def get_mask_account(number: str) -> str:
     """Функция маскировки номера счета"""
     return "*" * (len(number) - 18) + number[-4:]
 
