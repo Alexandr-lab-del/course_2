@@ -10,13 +10,15 @@ def mask_account_card(number: str) -> str:
     for i in number:
         if i.isalpha() or i == " ":
             words += i
-            continue
         else:
             numbers += i
-    if words == "Счет ":
-        return words.replace("    ", " ") + get_mask_account(numbers)
-    else:
-        return words.replace("    ", " ") + get_mask_card_number(numbers)
+    payment_name = words.rstrip()
+    payment_number = (
+        get_mask_account(numbers)
+        if payment_name.startswith("Счет")
+        else get_mask_card_number(numbers)
+    )
+    return f"{payment_name} {payment_number}"
 
 
 def get_data(data: str) -> str:
