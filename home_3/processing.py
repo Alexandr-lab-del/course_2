@@ -1,10 +1,10 @@
 def filter_by_state(data: list, target_state="EXECUTED") -> list:
     """Функция фильтрации операций по ключу state"""
-    result = []
+    sorted_result = []
     for i in data:
         if i.get("state", "EXECUTED") == target_state:
-            result.append(i)
-    return result
+            sorted_result.append(i)
+    return sorted_result
 
 
 input_data = [
