@@ -12,6 +12,8 @@ from home_2.src.widget import get_data, mask_account_card
     ],
 )
 def test_mask_account_card(input_data: str, expected_output: str) -> None:
+    """функция для проверки правильности работы функции mask_account_card
+    на конкретных входных данных и ожидаемом выводе"""
     assert mask_account_card(input_data) == expected_output
 
 
@@ -22,4 +24,6 @@ def test_mask_account_card(input_data: str, expected_output: str) -> None:
     ],
 )
 def test_get_data(input_data: str, expected_output: str) -> None:
+    """функция для проверки правильности работы функции get_data
+    на конкретных входных данных и ожидаемом выводе"""
     assert get_data(input_data) == expected_output
