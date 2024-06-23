@@ -1,10 +1,10 @@
-def filter_by_state(data: list, target_state="EXECUTED") -> list:
+def filter_by_state(data: list, target_state: str = "EXECUTED") -> list:
     """Функция фильтрации операций по ключу state"""
-    result = []
-    for i in data:
-        if i.get("state", "EXECUTED") == target_state:
-            result.append(i)
-    return result
+    sorted_result = []
+    for index in data:
+        if index.get("state", "EXECUTED") == target_state:
+            sorted_result.append(index)
+    return sorted_result
 
 
 input_data = [
@@ -21,8 +21,8 @@ result_canceled = filter_by_state(input_data, "CANCELED")
 print(result_canceled)
 
 
-def sort_by_date(data: list, reverse=True) -> list:
-    """Функция сортировки операций по дате"""
+def sort_by_date(data: list, reverse: bool = False) -> list:
+    """Функция сортирует список словарей по дате в порядке убывания или возрастания"""
     data_sort = sorted(data, key=lambda x: x["date"], reverse=reverse)
     return data_sort
 
@@ -34,5 +34,14 @@ input_data = [
     {"id": 615064591, "state": "CANCELED", "date": "2018-10-14T08:21:33.419441"},
 ]
 
-sorted_data = sort_by_date(input_data)
-print(sorted_data)
+"Сортировка списка по дате по убыванию"
+sorted_data_decreasing = sort_by_date(input_data, reverse=True)
+print("Сортировка по убыванию")
+for index in sorted_data_decreasing:
+    print(index)
+
+"Сортировка списка по дате по возрастания"
+sorted_data_increasing = sort_by_date(input_data, reverse=False)
+print("Сортировка по возрастанию")
+for index in sorted_data_increasing:
+    print(index)
