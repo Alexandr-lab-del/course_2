@@ -40,7 +40,7 @@ def test_filter_by_state(input_data: List[Dict[str, str]], target_state: str, ex
     ]),
 ])
 def test_sort_by_date(input_data: List[Dict[str, str]], reverse: bool, expected_result: List[Dict[str, str]]) -> None:
-    """функция для проверки правильности работы функции sort_by_date
+    """тест правильности работы функции sort_by_date
         на конкретных входных данных и ожидаемом выводе"""
     result = sort_by_date(input_data, reverse)
     assert result == expected_result
