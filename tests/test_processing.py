@@ -15,7 +15,7 @@ def input_data() -> List:
     ]
 
 
-@pytest.mark.parametrize("target_state: str, expected_output: int", [("EXECUTED", 2), ("CANCELED", 2)])
+@pytest.mark.parametrize("target_state, expected_output", [("EXECUTED", 2), ("CANCELED", 2)])
 def test_filter_by_state(input_data: List[Dict[str, str]], target_state: str, expected_output: int) -> None:
     """функция для проверки правильности работы функции filter_by_state
         на конкретных входных данных и ожидаемом выводе"""
@@ -25,7 +25,7 @@ def test_filter_by_state(input_data: List[Dict[str, str]], target_state: str, ex
         assert item["state"] == target_state
 
 
-@pytest.mark.parametrize("reverse: bool, expected_result: List[Dict[str, str]]", [
+@pytest.mark.parametrize("reverse, expected_result", [
     (True, [
         {"id": 41428829, "state": "EXECUTED", "date": "2019-07-03T18:35:29.512364"},
         {"id": 615064591, "state": "CANCELED", "date": "2018-10-14T08:21:33.419441"},
