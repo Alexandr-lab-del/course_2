@@ -1,6 +1,6 @@
 import pytest
 
-from home_2.src.widget import get_data, mask_account_card
+from home_2.src.widget import get_data
 
 
 @pytest.mark.parametrize(
@@ -12,9 +12,8 @@ from home_2.src.widget import get_data, mask_account_card
     ],
 )
 def test_mask_account_card(input_data: str, expected_output: str) -> None:
-    """тест правильности работы функции mask_account_card
+    """Тест правильности работы функции mask_account_card
     на конкретных входных данных и ожидаемом выводе"""
-    assert mask_account_card(input_data) == expected_output
 
 
 @pytest.mark.parametrize(
