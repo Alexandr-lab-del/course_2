@@ -2,7 +2,7 @@ from typing import Dict, List
 
 import pytest
 
-from home_3.processing import filter_by_state, sort_by_date
+from src.processing import filter_by_state, sort_by_date
 
 
 @pytest.mark.parametrize("target_state, expected_output", [("EXECUTED", 2), ("CANCELED", 2)])

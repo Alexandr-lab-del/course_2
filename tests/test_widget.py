@@ -1,6 +1,6 @@
 import pytest
 
-from home_2.src.widget import get_data
+from src.widget import get_data
 
 
 @pytest.mark.parametrize(
