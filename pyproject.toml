@@ -9,6 +9,8 @@ readme = "README.md"
 python = "^3.12"
 pytest = "^8.2.2"
 pytest-cov = "^5.0.0"
+transactions = "^0.2.0"
+generators = "^2020.4.27"
 
 
 
