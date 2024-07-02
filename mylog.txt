@@ -1,0 +1,15 @@
+INFO:root:my_function ok
+INFO:root:my_function ok
+INFO:root:my_function error: division by zero. Inputs: (1, 0), {}
+INFO:root:my_function ok
+INFO:root:my_function error: division by zero. Inputs: (1, 0), {}
+INFO:root:my_function ok
+INFO:root:my_function error: division by zero. Inputs: (1, 0), {}
+INFO:root:my_function ok
+INFO:root:my_function error: division by zero. Inputs: (1, 0), {}
+INFO:root:my_function ok
+INFO:root:my_error error: division by zero. Inputs: (1, 0), {}
+INFO:root:my_function ok
+INFO:root:my_error error: division by zero. Inputs: (1, 0), {}
+INFO:root:my_function ok
+INFO:root:my_function error: division by zero. Inputs: (1, 0), {}
