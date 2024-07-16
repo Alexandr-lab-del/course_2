@@ -1,10 +1,10 @@
 import unittest
 from unittest.mock import patch, Mock
-from src.currency_converter import convert_to_rubles
+from src.utils import convert_to_rubles
 
 
 class TestConvertToRubles(unittest.TestCase):
-    @patch('src.currency_converter.requests.get')
+    @patch('src.utils.requests.get')
     def test_convert_to_rubles_success(self, mock_get):
         result = {'result': 123.45}
         mock_response = Mock()
@@ -18,7 +18,7 @@ class TestConvertToRubles(unittest.TestCase):
 
         self.assertEqual(converted_amount, result['result'])
 
-    @patch('src.currency_converter.requests.get')
+    @patch('src.utils.requests.get')
     def test_convert_to_rubles_failure(self, mock_get):
         mock_response = Mock()
         mock_response.status_code = 400
