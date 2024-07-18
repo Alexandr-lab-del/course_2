@@ -1,27 +1,18 @@
 import os
-import requests
-from dotenv import load_dotenv
-
-load_dotenv()
-
-API_KEY = os.getenv("API_KEY")
-BASE_URL = "https://api.apilayer.com/exchangerates_data/convert?to={to}&from={from_currency}&amount={amount}"
+import json
 
 
-def convert_to_rubles(currency, amount):
-    """Конвертирует указанное количество валюты в указанную сумму в рублях,
-    спользуя API для получения актуального курса обмена"""
-    if currency == "RUB":
-        return amount
+def read_transactions(file_path):
+    """ Читает данные о транзакциях из JSON файла по указанному пути и возвращает список транзакций."""
+    transactions = []
+    if not os.path.exists(file_path):
+        return transactions
 
-    url = BASE_URL.format(to="RUB", from_currency=currency, amount=amount)
-    headers = {"apikey": API_KEY}
-
-    response = requests.get(url, headers=headers)
-
-    if response.status_code == 200:
-        data = response.json()
-        return data.get("result", None)
-    else:
-        print(f"Ошибка при запросе к API: {response.status_code} - {response.text}")
-        return None
+    with open(file_path, "r", encoding="utf-8") as file:
+        try:
+            data = json.load(file)
+            if isinstance(data, list):
+                transactions = data
+        except json.JSONDecodeError:
+            print("Ошибка чтения JSON файла")
+    return transactions
