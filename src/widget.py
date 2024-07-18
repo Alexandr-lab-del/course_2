@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from home_1.src.masks import get_mask_account, get_mask_card_number
+from src.masks import get_mask_account, get_mask_card_number
 
 
 def mask_account_card(number: str) -> str:
@@ -13,11 +13,7 @@ def mask_account_card(number: str) -> str:
         else:
             numbers += i
     payment_name = words.rstrip()
-    payment_number = (
-        get_mask_account(numbers)
-        if payment_name.startswith("Счет")
-        else get_mask_card_number(numbers)
-    )
+    payment_number = get_mask_account(numbers) if payment_name.startswith("Счет") else get_mask_card_number(numbers)
     return f"{payment_name} {payment_number}"
 
 
