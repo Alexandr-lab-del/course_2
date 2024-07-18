@@ -57,5 +57,5 @@ def test_convert_to_rubles(monkeypatch, status_code, currency_code, expected_amo
 # self.assertIsNone(converted_amount)
 #
 #
-# if __name__ == '__main__':
+# if __name__ == '__main__':^^^
 # unittest.main()
