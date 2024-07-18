@@ -1,5 +1,5 @@
-from src.external_api import read_transactions
-from src.utils import convert_to_rubles
+from src.utils import read_transactions
+from src.external_api import convert_to_rubles
 
 
 def main():
