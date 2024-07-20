@@ -13,6 +13,8 @@ transactions = "^0.2.0"
 generators = "^2020.4.27"
 python-dotenv = "^1.0.1"
 types-requests = "^2.32.0.20240712"
+pandas = "^2.2.2"
+openpyxl = "^3.1.5"
 
 
 

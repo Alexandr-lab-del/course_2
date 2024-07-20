@@ -1,7 +1,9 @@
-import os
 import json
 import logging
 from logging.handlers import RotatingFileHandler
+from openpyxl import load_workbook
+import pandas as pd
+
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
@@ -21,21 +23,29 @@ logger.addHandler(file_handler)
 
 
 def read_transactions(file_path):
-    """ Читает данные о транзакциях из JSON файла по указанному пути и возвращает список транзакций."""
+    """Чтение транзакций из файлов"""
     transactions = []
-    if not os.path.exists(file_path):
-        logger.error(f"Файл {file_path} не найден")
-        return transactions
+    if file_path.endswith('.json'):
+        with open(file_path, "r", encoding="utf-8") as file:
+            try:
+                data = json.load(file)
+                if isinstance(data, list):
+                    transactions = data
+            except json.JSONDecodeError:
+                logger.error("Ошибка чтения JSON файла")
 
-    with open(file_path, "r", encoding="utf-8") as file:
-        try:
-            data = json.load(file)
-            if isinstance(data, list):
-                transactions = data
-        except json.JSONDecodeError:
-            logger.error("Ошибка чтения JSON файла")
+    elif file_path.endswith('.csv'):
+        transactions = pd.read_csv(file_path, delimiter=';').to_dict(orient='records')
+
+    elif file_path.endswith('.xlsx'):
+        wb = load_workbook(file_path)
+        sheet = wb.active
+        data = sheet.values
+        columns = next(data)[0:]
+        transactions = [dict(zip(columns, row)) for row in data]
+
+    else:
+        logger.error("Неподдерживаемый формат файла")
+
     logger.info(f"Прочитано {len(transactions)} транзакций из файла {file_path}")
     return transactions
-
-
-transactions = read_transactions("transactions.json")
