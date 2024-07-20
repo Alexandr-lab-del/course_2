@@ -8,7 +8,7 @@ API_KEY = os.getenv("API_KEY")
 BASE_URL = "https://api.apilayer.com/exchangerates_data/convert?to={to}&from={from_currency}&amount={amount}"
 
 
-def convert_to_rubles(currency, amount):
+def convert_to_rubles_json(currency, amount):
     """Конвертирует указанное количество валюты в указанную сумму в рублях,
     спользуя API для получения актуального курса обмена"""
     if currency == "RUB":

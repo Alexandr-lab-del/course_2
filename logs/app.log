@@ -1,6 +1,52 @@
 2024-07-19 20:34:54,004 - utils - ERROR - Файл transactions.json не найден
 2024-07-19 20:34:54,482 - utils - INFO - Прочитано 101 транзакций из файла data/operations.json
-2024-07-19 20:50:24,193 - utils - ERROR - Файл transactions.json не найден
-2024-07-19 20:50:24,631 - utils - INFO - Прочитано 101 транзакций из файла data/operations.json
 2024-07-19 21:28:30,849 - masks - INFO - Маскированный номер карты: 1234 56** **** 3456
 2024-07-19 21:28:30,849 - masks - INFO - Маскированный номер счета: **4305
+2024-07-20 14:02:37,345 - utils - ERROR - Файл transactions.json не найден
+2024-07-20 14:02:37,804 - utils - INFO - Прочитано 101 транзакций из файла data/operations.json
+2024-07-20 14:15:01,265 - utils - INFO - Прочитано 101 транзакций из файла data/operations.json
+2024-07-20 14:15:20,019 - utils - INFO - Прочитано 1000 транзакций из файла data/transactions.csv
+2024-07-20 14:33:59,896 - utils - INFO - Прочитано 1000 транзакций из файла data/transactions.csv
+2024-07-20 14:34:51,831 - utils - INFO - Прочитано 101 транзакций из файла data/operations.json
+2024-07-20 14:36:30,859 - utils - INFO - Прочитано 101 транзакций из файла data/operations.json
+2024-07-20 14:36:30,869 - utils - INFO - Прочитано 1000 транзакций из файла data/transactions.csv
+2024-07-20 14:36:30,870 - utils - ERROR - Файл data/transactions_excel.xlsx не найден
+2024-07-20 14:36:30,870 - utils - ERROR - Ошибка чтения Excel файла: [Errno 2] No such file or directory: 'data/transactions_excel.xlsx'
+2024-07-20 14:36:30,871 - utils - INFO - Прочитано 0 транзакций из файла data/transactions_excel.xlsx
+2024-07-20 14:40:55,495 - utils - INFO - Прочитано 101 транзакций из файла data/operations.json
+2024-07-20 14:40:55,505 - utils - INFO - Прочитано 1000 транзакций из файла data/transactions.csv
+2024-07-20 14:40:55,506 - utils - ERROR - Файл data/transactions_excel.xlsx не найден
+2024-07-20 14:40:55,506 - utils - ERROR - Ошибка чтения Excel файла: [Errno 2] No such file or directory: 'data/transactions_excel.xlsx'
+2024-07-20 14:40:55,507 - utils - INFO - Прочитано 0 транзакций из файла data/transactions_excel.xlsx
+2024-07-20 16:36:42,318 - utils - ERROR - Файл transactions.json не найден
+2024-07-20 16:36:42,724 - utils - INFO - Прочитано 101 транзакций из файла data/operations.json
+2024-07-20 16:44:43,278 - utils - ERROR - Файл transactions.json не найден
+2024-07-20 16:44:43,680 - utils - INFO - Прочитано 101 транзакций из файла data/operations.json
+2024-07-20 16:45:09,344 - utils - ERROR - Файл transactions.json не найден
+2024-07-20 16:45:09,752 - utils - INFO - Прочитано 101 транзакций из файла data/operations.json
+2024-07-20 16:45:20,733 - utils - ERROR - Файл transactions.json не найден
+2024-07-20 16:45:21,128 - utils - INFO - Прочитано 101 транзакций из файла data/operations.json
+2024-07-20 16:46:57,653 - utils - ERROR - Файл transactions.json не найден
+2024-07-20 16:46:58,063 - utils - INFO - Прочитано 101 транзакций из файла data/operations.json
+2024-07-20 16:47:29,204 - utils - ERROR - Файл transactions.json не найден
+2024-07-20 16:47:29,590 - utils - INFO - Прочитано 101 транзакций из файла data/operations.json
+2024-07-20 17:16:48,387 - utils - INFO - Прочитано 101 транзакций из файла data/operations.json
+2024-07-20 17:17:00,431 - utils - INFO - Прочитано 1000 транзакций из файла data/transactions.csv
+2024-07-20 17:18:15,922 - utils - INFO - Прочитано 1000 транзакций из файла data/transactions.csv
+2024-07-20 17:19:43,685 - utils - INFO - Прочитано 1000 транзакций из файла data/transactions.csv
+2024-07-20 17:20:54,341 - utils - INFO - Прочитано 1000 транзакций из файла data/transactions.csv
+2024-07-20 17:21:23,868 - utils - INFO - Прочитано 1000 транзакций из файла data/transactions.csv
+2024-07-20 17:23:05,492 - utils - INFO - Прочитано 1000 транзакций из файла data/transactions.csv
+2024-07-20 17:24:16,624 - utils - INFO - Прочитано 101 транзакций из файла data/operations.json
+2024-07-20 17:29:20,869 - utils - INFO - Прочитано 101 транзакций из файла data/operations.json
+2024-07-20 17:33:05,206 - utils - INFO - Прочитано 101 транзакций из файла data/operations.json
+2024-07-20 17:33:36,269 - utils - INFO - Прочитано 1000 транзакций из файла data/transactions.csv
+2024-07-20 17:34:01,265 - utils - INFO - Прочитано 101 транзакций из файла data/operations.json
+2024-07-20 17:35:15,204 - utils - INFO - Прочитано 101 транзакций из файла data/operations.json
+2024-07-20 17:35:57,620 - utils - INFO - Прочитано 1000 транзакций из файла data/transactions.csv
+2024-07-20 17:44:21,267 - utils - INFO - Прочитано 1000 транзакций из файла C:\Users\Александр Побережный\Desktop\питон\course_2\data\transactions_excel.xlsx
+2024-07-20 17:45:40,581 - utils - INFO - Прочитано 1000 транзакций из файла C:\Users\Александр Побережный\Desktop\питон\course_2\data\transactions_excel.xlsx
+2024-07-20 17:52:50,052 - utils - INFO - Прочитано 101 транзакций из файла data/operations.json
+2024-07-20 17:53:19,975 - utils - INFO - Прочитано 1000 транзакций из файла data/transactions.csv
+2024-07-20 17:54:31,454 - utils - INFO - Прочитано 1000 транзакций из файла C:\\Users\\Александр Побережный\\Desktop\\питон\\course_2\\data\\transactions_excel.xlsx
+2024-07-20 17:57:06,072 - utils - INFO - Прочитано 101 транзакций из файла C:\Users\Александр Побережный\Desktop\питон\course_2\data\operations.json
