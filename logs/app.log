@@ -45,3 +45,4 @@
 2024-07-20 17:35:15,204 - utils - INFO - Прочитано 101 транзакций из файла data/operations.json
 2024-07-20 17:35:57,620 - utils - INFO - Прочитано 1000 транзакций из файла data/transactions.csv
 2024-07-20 17:44:21,267 - utils - INFO - Прочитано 1000 транзакций из файла C:\Users\Александр Побережный\Desktop\питон\course_2\data\transactions_excel.xlsx
+2024-07-20 18:13:00,071 - utils - INFO - Прочитано 1000 транзакций из файла C:\Users\Александр Побережный\Desktop\питон\course_2\data\transactions.csv
